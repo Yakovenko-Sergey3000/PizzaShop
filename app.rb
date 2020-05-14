@@ -3,6 +3,6 @@ require 'sinatra'
 
 get '/' do 
 
-erb "hello"
+erb "hi"
 
 end 
