@@ -1,8 +1,10 @@
 require 'rubygems'
 require 'sinatra'
+require 'sinatra/reloader'
+
 
 get '/' do 
 
-erb "Hekk"
+erb "Hello"
 
 end 
