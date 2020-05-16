@@ -1,5 +1,28 @@
 <h2>Hello from index</h2>
-<button class ="btn btn-info" onclick="something()">Clic me</button>
+
+<div class="container">
+	<div class="row" >
+		<div class="col-md-2"> 
+			<% @product.each do |p| %>
+			<img src="<%= p.path_to_image%>" width="140" height="120" >
+			Title:	<%= p.title%><br>
+			About:	<%= p.description%><br>
+			Price:	<%= p.price%><br>
+			Size:	<%= p.size%>
+
+				
+				<br><button class ="btn btn-info" onclick="something()">Clic me</button><br>
+			<% end %> 
+		</div>
+
+		<div class="col-md-1">.col-md-1</div>
+	</div>
+</div>
+
+
+
+
+
 
 
 
