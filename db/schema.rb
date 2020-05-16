@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_16_120628) do
+ActiveRecord::Schema.define(version: 2020_05_16_134831) do
 
-  create_table "producs", force: :cascade do |t|
+  create_table "products", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.decimal "price"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2020_05_16_120628) do
     t.boolean "is_spicy"
     t.boolean "is_veg"
     t.boolean "is_best_offer"
-    t.string "path_to_photo"
+    t.string "path_to_image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
