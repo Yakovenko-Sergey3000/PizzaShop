@@ -10,5 +10,8 @@ function something()
 	
 }	
 
-
+function add_to_card(id)
+{
+   alert("with added pizza with id:" + id )
+}
 

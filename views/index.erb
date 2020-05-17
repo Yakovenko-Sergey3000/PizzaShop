@@ -4,15 +4,15 @@
 	
 	<div class="row" >
 		<% @products.each do |product| %>
-		<div class="col-md-3"> 
+		<div class="col-md-4"> 
 			<p> <b>Pizza: </b><b><%=product.title %></b><br>
-			<img src="<%=product.path_to_image%>" width="250" height="150"><br>
+			<div><img src="<%=product.path_to_image%>" width="250" height="150"></div><br>
 			
 			<b>About: </b><%=product.description %><br>
 			<b>Sise: </b><%=product.size.to_i%> sm<br>
 			<b>Price: </b><i><%=product.price.to_i%></i> rub</p>
 					<hr>
-				<button class ="btn btn-info" onclick="something()">Clic me</button><br>
+				<button class ="btn btn-sm btn-success" onclick="add_to_card(<%= product.id %>)">Add o card</button><br>
 			
 		</div>
 		<% end %>
@@ -20,6 +20,7 @@
 		
 	</div>
 </div>
+
 
 
   
