@@ -1,43 +1,28 @@
 <h2>Our menu:</h2>
 
-<div class="container">
+
 	
 	<div class="row" >
-		
-		<div class="col-md-4"> 
-				<img src="<%=@product1.path_to_image%>" width="250" height="150"><br>
-			<p> <b>Pizza: </b><b><%=@product1.title %></b><br>
-			<b>About: </b><%=@product1.description %><br>
-			<b>Sise: </b><%=@product1.size.to_i%> sm<br>
-			<b>Price: </b><i><%=@product1.price.to_i%></i> rub</p>
+		<% @products.each do |product| %>
+		<div class="col-md-3"> 
+			<p> <b>Pizza: </b><b><%=product.title %></b><br>
+			<img src="<%=product.path_to_image%>" width="250" height="150"><br>
+			
+			<b>About: </b><%=product.description %><br>
+			<b>Sise: </b><%=product.size.to_i%> sm<br>
+			<b>Price: </b><i><%=product.price.to_i%></i> rub</p>
 					<hr>
 				<button class ="btn btn-info" onclick="something()">Clic me</button><br>
 			
 		</div>
+		<% end %>
 
-
-		<div class="col-md-4">
-			<img src="<%=@product2.path_to_image%>" width="200" height="200"><br>
-				<p> <b>Pizza: </b><b><%=@product2.title %></b><br>
-			<b>About: </b><%=@product2.description %><br>
-			<b>Sise: </b><%=@product2.size.to_i%> sm<br>
-			<b>Price: </b><i><%=@product2.price.to_i%></i> rub</p>
-					<hr>
-				<br><button class ="btn btn-info" onclick="something()">Clic me</button><br>
-		</div>
-
-		<div class="col-md-4">
-			<img src="<%=@product3.path_to_image%>" width="250" height="150"><br>
-				<p> <b>Pizza: </b><b><%=@product3.title %></b><br>
-			<b>About: </b><%=@product3.description %><br>
-			<b>Sise: </b><%=@product3.size.to_i%> sm<br>
-			<b>Price: </b><i><%=@product3.price.to_i%></i> rub</p>
-					<hr>
-				<br><button class ="btn btn-info" onclick="something()">Clic me</button><br>
-		</div>
+		
 	</div>
 </div>
 
+
+  
 
 
 
